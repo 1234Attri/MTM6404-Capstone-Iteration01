@@ -1,4 +1,4 @@
-# ☕ Coffee Task Manager – React Capstone Project
+ Task Manager – React Capstone Project
 
 Welcome to **Coffee Task Manager**, a React-based single-page application built for managing tasks in a cozy coffee shop environment. This project is developed as part of **MTM6404 Web Applications – Capstone Iteration 4**.
 
