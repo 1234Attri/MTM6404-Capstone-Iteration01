@@ -52,7 +52,5 @@ _(Optional if deployed to Netlify, Vercel, or GitHub Pages)_
 ✅ Responsive design across screen sizes  
 ✅ Coffee-themed color palette and UI  
 
----
 
-## 📁 Project Folder Structure
 
