@@ -1,17 +1,11 @@
-import React from 'react'
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import { RouterProvider } from 'react-router-dom'
-import router from './utils/router.jsx'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+// src/main.jsx
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./style.css"; // Ensure this matches the name of your CSS file
 
-
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <RouterProvider router={router}>
-      <App />
-    </RouterProvider>
-  </StrictMode>
-)
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
