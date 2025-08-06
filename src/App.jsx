@@ -1,19 +1,30 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-import { Link, Outlet } from 'react-router-dom'
-import './App.css'
+// src/App.jsx
 
-function App() {
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Tasks from "./pages/Tasks";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import "./App.css"; // Ensure this file is included
 
-  //function to check if bootstrap is working
+export default function App() {
   return (
-    <>
-    <div className="App">
-      <h1>Contact Book</h1>
-    </div>
-    <Outlet />
-    </>
-  )
+    <Router>
+      <div id="root">
+        <Navbar />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/tasks" element={<Tasks />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
+  );
 }
-
-export default App
